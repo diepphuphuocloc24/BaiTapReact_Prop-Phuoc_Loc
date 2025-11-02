@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Adidas Prophere",
+    "alias": "adidas-prophere",
+    "price": 350,
+    "description": "Adidas Prophere features a Primeknit upper that wraps your foot snugly for flexible movement and all-day comfort.",
+    "shortDescription": "Comfortable midsole cushioning supports running walking and casual activities daily.",
+    "quantity": 995,
+    "image": "http://svcy3.myclass.vn/images/adidas-prophere.png",
+    "status": "Best Seller"
+  },
+  {
+    "id": 2,
+    "name": "Adidas Prophere Black White",
+    "alias": "adidas-prophere-black-white",
+    "price": 450,
+    "description": "The black and white Prophere combines a bold design with a supportive Primeknit upper for versatile wear.",
+    "shortDescription": "Boost midsole delivers energy return for fast responsive comfortable steps.",
+    "quantity": 990,
+    "image": "http://svcy3.myclass.vn/images/adidas-prophere-black-white.png",
+    "status": "Weeks Of Deals"
+  },
+  {
+    "id": 3,
+    "name": "Adidas Prophere Customize",
+    "alias": "adidas-prophere-customize",
+    "price": 375,
+    "description": "Customize your Prophere for a unique style while enjoying the comfort of a Primeknit upper and responsive cushioning.",
+    "shortDescription": "Customizable design with supportive midsole ensures comfort during movement.",
+    "quantity": 415,
+    "image": "http://svcy3.myclass.vn/images/adidas-prophere-customize.png",
+    "status": "Best Seller"
+  },
+  {
+    "id": 4,
+    "name": "Adidas Super Star Red",
+    "alias": "adidas-super-star-red",
+    "price": 465,
+    "description": "Classic Super Star design in red with leather upper for durability and retro style.",
+    "shortDescription": "Leather upper provides retro style and comfort for everyday wear.",
+    "quantity": 542,
+    "image": "http://svcy3.myclass.vn/images/adidas-super-star-red.png",
+    "status": "Weeks Of Deals"
+  },
+  {
+    "id": 5,
+    "name": "Adidas Swift Run",
+    "alias": "adidas-swift-run",
+    "price": 550,
+    "description": "Swift Run shoes are lightweight with a breathable upper, ideal for running or casual wear.",
+    "shortDescription": "Breathable lightweight design ensures comfortable running walking casual activity.",
+    "quantity": 674,
+    "image": "http://svcy3.myclass.vn/images/adidas-swift-run.png",
+    "status": "Best Seller"
+  },
+  {
+    "id": 6,
+    "name": "Adidas Tenisky Super Star",
+    "alias": "adidas-tenisky-super-star",
+    "price": 250,
+    "description": "Tenisky Super Star combines retro leather styling with modern comfort and support.",
+    "shortDescription": "Stylish retro leather upper with midsole cushioning ensures all-day comfort.",
+    "quantity": 456,
+    "image": "http://svcy3.myclass.vn/images/adidas-tenisky-super-star.png",
+    "status": "Weeks Of Deals"
+  },
+  {
+    "id": 7,
+    "name": "Adidas Ultraboost 4",
+    "alias": "adidas-ultraboost-4",
+    "price": 450,
+    "description": "Ultraboost 4 features a Primeknit upper and Boost cushioning for maximum energy return and comfort.",
+    "shortDescription": "Boost cushioning and Primeknit upper provide responsive comfortable running support.",
+    "quantity": 854,
+    "image": "http://svcy3.myclass.vn/images/adidas-ultraboost-4.png",
+    "status": "Best Seller"
+  },
+  {
+    "id": 8,
+    "name": "Adidas Yeezy 350",
+    "alias": "adidas-yeezy-350",
+    "price": 750,
+    "description": "Yeezy 350 combines futuristic design with a soft Primeknit upper for style and comfort.",
+    "shortDescription": "Futuristic design with comfortable Boost midsole for stylish all-day wear.",
+    "quantity": 524,
+    "image": "http://svcy3.myclass.vn/images/adidas-yeezy-350.png",
+    "status": "Weeks Of Deals"
+  },
+  {
+    "id": 9,
+    "name": "Nike Adapt BB",
+    "alias": "nike-adapt-bb",
+    "price": 630,
+    "description": "Nike Adapt BB features self-lacing technology for a personalized fit and lightweight cushioning for dynamic movement.",
+    "shortDescription": "Self-lacing system ensures snug fit and comfortable responsive court play.",
+    "quantity": 599,
+    "image": "http://svcy3.myclass.vn/images/nike-adapt-bb.png",
+    "status": "Best Seller"
+  },
+  {
+    "id": 10,
+    "name": "Nike Air Max 97",
+    "alias": "nike-air-max-97",
+    "price": 650,
+    "description": "Air Max 97 showcases iconic design lines with full-length Max Air cushioning for smooth comfort.",
+    "shortDescription": "Max Air cushioning delivers smooth comfortable responsive support for daily wear.",
+    "quantity": 984,
+    "image": "http://svcy3.myclass.vn/images/nike-air-max-97.png",
+    "status": "Weeks Of Deals"
+  },
+  {
+    "id": 11,
+    "name": "Nike Air Max 97 Blue",
+    "alias": "nike-air-max-97-blue",
+    "price": 450,
+    "description": "Air Max 97 Blue combines stylish colorway with full-length Max Air cushioning for all-day comfort.",
+    "shortDescription": "Stylish colorway with Max Air cushioning ensures comfortable everyday movement.",
+    "quantity": 875,
+    "image": "http://svcy3.myclass.vn/images/nike-air-max-97-blue.png",
+    "status": "Best Seller"
+  },
+  {
+    "id": 12,
+    "name": "Nike Air Max 270 React",
+    "alias": "nike-air-max-270-react",
+    "price": 750,
+    "description": "Air Max 270 React features a modern design with React foam and Max Air unit for exceptional comfort and energy return.",
+    "shortDescription": "React foam and Max Air unit provide responsive comfortable daily support.",
+    "quantity": 445,
+    "image": "http://svcy3.myclass.vn/images/nike-air-max-270-react.png",
+    "status": "Weeks Of Deals"
+  }
+]
