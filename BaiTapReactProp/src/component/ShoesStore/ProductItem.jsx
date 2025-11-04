@@ -1,9 +1,9 @@
 import React from 'react'
 
 const ProductItem = ({ shoesProp, onSelectedCurrentShoes }) => {
+    // Khi bấm nút Thêm vào giỏ hàng
     const handleAddToCard = () => {
         onSelectedCurrentShoes(shoesProp)
-        console.log("Tại Item là:", shoesProp);
     }
 
     return (

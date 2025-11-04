@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import data from "./../data.json";
 import ProductItem from "./ProductItem";
 
-const ProductList = ({ onSelectListShoes }) => {
-    const [shoeList] = useState(data);
+const ProductList = ({ shoesListProp, onSelectListShoes }) => {
+
 
     const [currentShoes, setCurrentShoes] = useState(null)
 
@@ -11,11 +10,10 @@ const ProductList = ({ onSelectListShoes }) => {
     const getInfoFromItem = (selectedShoes) => {
         setCurrentShoes(selectedShoes)
         onSelectListShoes(selectedShoes)
-        console.log("Tại List là:", selectedShoes);
     }
 
     const renderShoeList = () => {
-        return shoeList.map((shoes) => {
+        return shoesListProp.map((shoes) => {
             return (
                 <ProductItem key={shoes.id} shoesProp={shoes} onSelectedCurrentShoes={getInfoFromItem} />
             )
