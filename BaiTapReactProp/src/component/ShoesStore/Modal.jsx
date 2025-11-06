@@ -1,10 +1,19 @@
 import React from "react";
 
-const Modal = ({ shoesPropModal, onChangeQuantity, onTotalPrice }) => {
+const Modal = ({
+  shoesPropModal,
+  onChangeQuantity,
+  onTotalPrice,
+  onClearListCart,
+  onDeleteShoesCart,
+}) => {
   const showShoesToModal = () => {
     return shoesPropModal.map((shoesModal) => {
       return (
-        <div className="flex flex-col md:flex-row items-center gap-4 p-4 bg-white shadow-lg rounded-2xl hover:shadow-2xl transition-all duration-500 cursor-pointer border border-gray-100">
+        <div
+          key={shoesModal.id}
+          className="flex flex-col md:flex-row items-center gap-4 p-4 bg-white shadow-lg rounded-2xl hover:shadow-2xl transition-all duration-500 cursor-pointer border border-gray-100"
+        >
           <img
             src={shoesModal.img}
             alt={shoesModal.name}
@@ -16,7 +25,10 @@ const Modal = ({ shoesPropModal, onChangeQuantity, onTotalPrice }) => {
               <h3 className="text-lg md:text-xl font-semibold text-black">
                 {shoesModal.name}
               </h3>
-              <button className="text-gray-500 hover:text-red-600 p-2 rounded-full transition-colors duration-500 shadow-sm hover:shadow-md">
+              <button
+                className="text-gray-500 hover:text-red-600 p-2 rounded-full transition-colors duration-500 shadow-sm hover:shadow-md"
+                onClick={() => handleDelete(shoesModal.id)}
+              >
                 <i className="fa-solid fa-trash"></i>
               </button>
             </div>
@@ -57,6 +69,22 @@ const Modal = ({ shoesPropModal, onChangeQuantity, onTotalPrice }) => {
     return onTotalPrice();
   };
 
+  const handleCheckOut = () => {
+    onClearListCart();
+
+    alert("Thanh toán thành công! Cảm ơn bạn đã mua hàng.");
+
+    document.getElementById("close-button").click();
+  };
+
+  const handleClear = () => {
+    onClearListCart();
+  };
+
+  const handleDelete = (id) => {
+    onDeleteShoesCart(id);
+  };
+
   return (
     <div
       id="cart-modal"
@@ -66,6 +94,7 @@ const Modal = ({ shoesPropModal, onChangeQuantity, onTotalPrice }) => {
     >
       <div className="bg-white rounded-3xl shadow-2xl w-full max-w-5xl relative p-8 md:p-10 animate-fade-in">
         <button
+          id="close-button"
           className="absolute top-5 right-5 text-gray-500 hover:text-red-600 text-3xl font-bold transition-all duration-500 cursor-pointer"
           data-modal-hide="cart-modal"
         >
@@ -107,10 +136,16 @@ const Modal = ({ shoesPropModal, onChangeQuantity, onTotalPrice }) => {
 
             <div className="flex flex-col mt-5 gap-4">
               <div className="flex gap-3 justify-end">
-                <button className="bg-black text-white px-5 py-3 rounded-xl hover:bg-gray-800 transition font-semibold cursor-pointer">
+                <button
+                  className="bg-black text-white px-5 py-3 rounded-xl hover:bg-gray-800 transition font-semibold cursor-pointer"
+                  onClick={() => handleCheckOut()}
+                >
                   Check Out
                 </button>
-                <button className="bg-red-600 text-white px-5 py-3 rounded-xl hover:bg-red-700 transition font-semibold cursor-pointer">
+                <button
+                  className="bg-red-600 text-white px-5 py-3 rounded-xl hover:bg-red-700 transition font-semibold cursor-pointer"
+                  onClick={() => handleClear()}
+                >
                   Clear All
                 </button>
               </div>

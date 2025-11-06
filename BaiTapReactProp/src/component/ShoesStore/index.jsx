@@ -13,9 +13,8 @@ const ShoeStore = () => {
   // Nhận thông tin từ List
   const getInforFromList = (selectedListShoes) => {
     setListCurrentShoes(selectedListShoes);
-    console.log("Tại index là:", selectedListShoes);
+
     addToCart(selectedListShoes);
-    show_Cart_Popup()
   };
 
   // Tìm vị tí Index
@@ -47,7 +46,6 @@ const ShoeStore = () => {
     setArray_Cart(newArray_Cart);
     setLocalStorage(newArray_Cart);
   };
-  console.log(array_Cart);
 
   //   Thay đổi số lượng sản phẩm
   const changeQuantity = (id, status) => {
@@ -84,12 +82,26 @@ const ShoeStore = () => {
 
   const calculateTotalQuantity = () => {
     if (array_Cart.length === 0) {
-      return 0
+      return 0;
     } else {
       return array_Cart.reduce((total, item) => {
-        return total + item.quantity
+        return total + item.quantity;
       }, 0);
-    };
+    }
+  };
+
+  const clearListCart = () => {
+    setArray_Cart([]);
+  };
+
+  const deleteShoesCart = (id) => {
+    const index = findIndexShoes(id);
+    if (index !== -1) {
+      const newArray = array_Cart.filter((shoes) => {
+        return shoes.id !== id;
+      });
+      setArray_Cart(newArray);
+    }
   };
 
   const setLocalStorage = () => {
@@ -119,13 +131,15 @@ const ShoeStore = () => {
         shoesPropModal={array_Cart}
         onChangeQuantity={changeQuantity}
         onTotalPrice={calculateTotalPrice}
+        onClearListCart={clearListCart}
+        onDeleteShoesCart={deleteShoesCart}
       />
 
       <ProductList
         shoesListProp={shoeList}
         onSelectListShoes={getInforFromList}
       />
-    </div >
+    </div>
   );
 };
 
