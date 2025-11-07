@@ -26,11 +26,11 @@ const ProductList = ({ shoesListProp, onSelectListShoes }) => {
             style={{ backgroundImage: "url('./img/background.jpg')" }}
         >
             <div className="container mx-auto">
-                <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+                <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 animate__animated animate__fadeInUp wow" data-wow-delay="0.3s">
                     OUR PRODUCT
                 </h2>
 
-                <div className="grid grid-cols-3 gap-8">
+                <div className="grid grid-cols-3 gap-8 animate__animated animate__fadeInUp wow" data-wow-delay="0.3s">
                     {renderShoeList()}
                 </div>
             </div>

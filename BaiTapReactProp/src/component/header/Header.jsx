@@ -2,7 +2,10 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <div className="fixed top-0 left-0 w-full bg-black z-10 py-5">
+        <div
+            className="fixed top-0 left-0 w-full bg-black z-10 py-5 animate__animated animate__fadeInDown"
+            style={{ animationDelay: '0.3s' }}
+        >
             <div className="relative container mx-auto flex items-center justify-end">
                 <h1 className="absolute left-1/2 transform -translate-x-1/2 text-4xl font-extrabold text-white tracking-widest">
                     FIELU
@@ -12,7 +15,7 @@ const Header = () => {
                     <i className="fi fi-ts-shopping-bag mr-2"></i> My Cart
                 </button>
             </div>
-        </div>
+        </div >
     )
 }
 

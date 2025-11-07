@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer>
-            <div className="bg-[#408267] flex items-center justify-center py-8">
+        <footer className='bg-gray-100'>
+            <div className="bg-[#408267] flex items-center justify-center py-8 animate__animated animate__fadeInUp wow" data-wow-delay="0.3s">
                 <div className="flex items-center gap-6">
                     <h3 className="text-white text-2xl font-semibold">
                         JOIN OUR MEMBER & GET 15% OFF
@@ -15,7 +15,7 @@ const Footer = () => {
             </div>
 
             <div className="bg-gray-50 text-gray-500">
-                <div className="w-[80%] mx-auto flex justify-between py-16">
+                <div className="w-[80%] mx-auto flex justify-between py-16 animate__animated animate__fadeInUp wow" data-wow-delay="0.3s">
 
                     <div>
                         <h2 className="text-lg font-bold text-black mb-4">Resources</h2>

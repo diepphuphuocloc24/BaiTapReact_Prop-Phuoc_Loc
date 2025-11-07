@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+:root {
+    --animate-duration: 2s;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
