@@ -8,7 +8,7 @@ const Modal = ({
   onDeleteShoesCart,
 }) => {
   const showShoesToModal = () => {
-    return shoesPropModal.map((shoesModal) => {
+    return shoesPropModal && shoesPropModal.map((shoesModal) => {
       return (
         <div
           key={shoesModal.id}

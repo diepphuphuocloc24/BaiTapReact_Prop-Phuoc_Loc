@@ -13,7 +13,7 @@ const ProductList = ({ shoesListProp, onSelectListShoes }) => {
     }
 
     const renderShoeList = () => {
-        return shoesListProp.map((shoes) => {
+        return shoesListProp && shoesListProp.map((shoes) => {
             return (
                 <ProductItem key={shoes.id} shoesProp={shoes} onSelectedCurrentShoes={getInfoFromItem} />
             )
